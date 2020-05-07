@@ -1,6 +1,6 @@
 package org.pattern.strategy.step2.fly;
 
-public class NoFlyImpl implements Fly{
+public class NoFlyBehaviorImpl implements FlyBehavior {
 
     @Override
     public void fly() {

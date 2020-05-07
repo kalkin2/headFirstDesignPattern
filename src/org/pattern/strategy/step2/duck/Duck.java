@@ -1,27 +1,39 @@
 package org.pattern.strategy.step2.duck;
 
-import org.pattern.strategy.step2.fly.Fly;
-import org.pattern.strategy.step2.quack.Quack;
+import org.pattern.strategy.step2.fly.FlyBehavior;
+import org.pattern.strategy.step2.quack.QuackBehavior;
 
-public class Duck {
+public abstract class Duck {
 
 
-    public Quack quack;
-    public Fly fly;
+    public QuackBehavior quackBehavior;
+    public FlyBehavior flyBeHavior;
 
     public void performQuack(){
-        quack.quack();
+        quackBehavior.quack();
     }
 
     public void performFly(){
-        fly.fly();
+        flyBeHavior.fly();
     }
 
     public void swim(){
-        System.out.println("수영중..");
+        System.out.println("물에 뜸..");
     }
 
     public void display(){
         System.out.println("적당한 모영을 표시");
     }
+
+
+    public void setFlyBeHavior(FlyBehavior flyBeHavior){
+        this.flyBeHavior = flyBeHavior;
+    }
+
+    public void setQuackBehavior(QuackBehavior quackBehavior){
+        this.quackBehavior = quackBehavior;
+    }
+
+
+
 }
