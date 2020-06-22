@@ -11,12 +11,15 @@ public class Simulation {
      * @param args
      */
     public static void main(String[] args) {
-        Sayian goku = new Songoku();
-        goku = new Earing(goku);
-        goku = new Globe(goku);
-        goku = new YeouiBong(goku);
+        Sayian goku = new Songoku();//5000
+        goku = new Earing(goku);//500
+        goku = new Globe(goku);//200
+        goku = new YeouiBong(goku);//800
+        goku = new Earing(goku);//500
+        //5000+500+200+800+500(이어링 2개 보너스 데미지 추가 55)
 
-       System.out.println(goku.getDescription()+" 데미지 : "+goku.damage());
+
+        System.out.println(goku.getDescription()+" 데미지 : "+goku.damage());
     }
 
 }
