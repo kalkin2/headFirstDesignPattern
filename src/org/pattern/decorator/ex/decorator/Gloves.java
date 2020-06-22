@@ -3,9 +3,9 @@ package org.pattern.decorator.ex.decorator;
 import org.pattern.decorator.ex.Sayian;
 import org.pattern.decorator.ex.decorator.Accesory;
 
-public class Globe extends Accesory {
+public class Gloves extends Accesory {
     Sayian sayian ;
-    public Globe(Sayian sayian) {
+    public Gloves(Sayian sayian) {
         System.out.println("장갑 장착");
         this.sayian = sayian;
     }
