@@ -5,7 +5,6 @@ import org.pattern.strategy.step2.quack.QuackBehavior;
 
 public abstract class Duck {
 
-
     public QuackBehavior quackBehavior;
     public FlyBehavior flyBeHavior;
 
